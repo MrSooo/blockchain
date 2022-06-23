@@ -1,0 +1,19 @@
+<nav class="navbar navbar-dark bg-dark">
+  <a class="navbar-brand" routerLink="/">
+    MyCoin
+  </a>
+
+  <div>
+    <button class="btn btn-outline-light" routerLink="new/transaction">Create transaction</button>
+    &nbsp;
+    <button class="btn btn-outline-light" routerLink="new/transaction/pending">Pending transactions</button>
+    &nbsp;
+    <button class="btn btn-outline-light" routerLink="new/transaction/all">All transactions</button>
+    &nbsp;
+    <button class="btn btn-outline-light" [routerLink]="['/wallet', publicKey]">Access wallet</button>
+  </div>
+
+</nav>
+
+
+<router-outlet></router-outlet>
